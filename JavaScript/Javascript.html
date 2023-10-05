@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <tittle>JAVASCRIPT</tittle>
+</head>
+
+
+<body>
+    <p id="text">Hello world</p>
+    <button id="mybutton" >change text</button>
+    <p id="secondpara">java is</p>
+   <button id="mybutton2" >append text</button>
+
+    <p id="empty"></p>
+    <button id="create" >create text</button>
+    <p id="styletext" >this is some text</p>
+    <button id="stylebutton" >style text</button>
+<br>
+<br>
+    <input type="text" id="abc">
+    <button id="textchange">change text</button>
+    <P>username</P><input type="text "  id="username">
+    <button id="uusernamee">click</button>
+    <p>password</p><input type="password"  id="password">
+    <button id="passwordd">click</button>
+    <p id="Niha"></p>
+
+   <script type="text/Javascript">
+       document.getElementById("mybutton").onclick=function(){
+        alert("button is clicked");    
+    document.getElementById("text").innerHTML="Hello Nihara";
+       }
+       //!----changed id saying hello world to hello nihara----!
+       document.getElementById("mybutton2").onclick=function(){
+        alert("button 2 is clicked");    
+    document.getElementById("secondpara").innerHTML="I think "+document.getElementById("secondpara").innerHTML+"awesome";
+    }
+    //------------------------------------------
+    document.getElementById("create").onclick=function(){
+         
+    document.getElementById("empty").innerHTML="<h1>hi there!!!!!!</h1>";
+    }
+
+     //------------------------------------------
+    
+     document.getElementById("stylebutton").onclick=function(){
+         
+         document.getElementById("styletext").style.color="red";
+         document.getElementById("styletext").style.fontSize="50px";
+         }
+   
+       //-----------------
+       
+       var tweets = ["morning","coffee"];
+       tweets.push("back");
+       alert(tweets[1]);
+       tweets.slice(1,1); 
+       console.log(tweets);
+
+       document.getElementById("uusernamee").onclick=function(){
+         var magicuser=document.getElementById("username").value;
+         var user="niharapadil";
+         if(magicuser==user){
+         //document.getElementById("niha").innerHTML="hello nihara , u entered the correct usename";}
+        alert(u got it);
+         }
+        }
+
+         document.getElementById("passwordd").onclick=function(){
+         
+         document.getElementById("niha").innerHTML="hello nihara , u entered the correct usename and password";
+        
+         }
+         //-----------------
+         function alertme(a,b){
+           
+           return( (a+b)/2);
+         }
+      
+         var x=10;
+            var y=5;
+            alert(alertme(x,y));
+    
+    </script>
+</body>
+</html>

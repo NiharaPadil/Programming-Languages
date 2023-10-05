@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Demo</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        var arr = new Array(7,8,4,3,9,0);
+        var i, j, temp;
+        document.write( "<br/> <br/>Before sorting...<br/>")
+        for (i = 0; i < 6; i++) {
+            document.write(arr[i] + "<br/>");
+        }
+        for (i = 0; i < 6; i++) {
+            for (j = 0; j< 6; j++) {
+           if(arr[j]>arr[j+1]){
+            temp=arr[j];
+            arr[j]=arr[j+1];
+            arr[j+1]=temp;
+           }
+        }    
+        }
+        document.write( "<br/> <br/>after sorting...<br/>")
+        for (i = 0; i < 6; i++) {
+            document.write(arr[i] + "<br/>");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <tittle>JAVASCRIPT</tittle>
+        
+</head>
+<body>
+    <p>Guess the number between 1-10</p>
+    <input type="text" id="guess">
+    <button id="mybutton" >GUESS</button>
+   
+   <script type="text/Javascript">
+       document.getElementById("mybutton").onclick=function(){
+        var randomnumber= Math.random();
+        randomnumber=randomnumber*11;
+        randomnumber=Math.floor(randomnumber)   
+   if(document.getElementById("guess").value==randomnumber){
+    alert("WELL DONE! YOU GOT IT RIGHT");
+   }else{
+   
+ 
+    alert("NOPE THE NUMBER WAS "+randomnumber );
+
+   }
+}
+    
+    </script>
+</body>
+</html>
